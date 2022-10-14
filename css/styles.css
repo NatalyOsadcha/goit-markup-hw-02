@@ -27,9 +27,9 @@
   line-height: 1.14;
 }
  
-/* General rules */
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 ul,
@@ -52,12 +52,9 @@ li {
   margin: -1px;
 }
 
-.align-right {
-  text-align: right;
-}
-
 .button {
 font-family: inherit;
+color: currentColor;
 } 
 
 /* Logo */
@@ -69,7 +66,7 @@ font-family: inherit;
   letter-spacing: 0.03em;
   color: #000000;
 }
-footer .logo {
+.footer .logo {
   color: #ffffff;
 }
 .accent {
@@ -85,7 +82,6 @@ footer .logo {
 .nav-list .link {
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
 }
 
 /* Link */
@@ -207,7 +203,6 @@ footer .logo {
 /* Page Portfolio */
 .filter .button {
   background-color: var(--accent-bg-color);
-   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -221,8 +216,8 @@ footer .logo {
   cursor: pointer;
 }
 
+
 .portfolio-title {
-  color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -233,4 +228,9 @@ footer .logo {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.portfolio-title:hover,
+.portfolio-title:focus {
+  color: var(--accent-color)
 }
